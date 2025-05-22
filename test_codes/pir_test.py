@@ -34,3 +34,4 @@ try:
 except KeyboardInterrupt:
     print("Program stopped by user.")
     GPIO.cleanup()
+
