@@ -15,7 +15,10 @@ try:
     while True:
         motion = GPIO.input(PIR_PIN)
         if motion:
-            GPIO.output(LED_PIN, GPIO.HIGH)
+            GPIO.output(LED_PIN, GPIO.HIGH)  # Turn on LED
+            time.sleep(0.2)
+            GPIO.output(LED_PIN, GPIO.LOW)   # Turn off LED
+            time.sleep(0.2)
             print("Motion Detected: LED ON")
         else:
             GPIO.output(LED_PIN, GPIO.LOW)
