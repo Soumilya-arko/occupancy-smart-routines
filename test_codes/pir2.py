@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 # --- Configuration ---
-PIR_PIN = 17  # GPIO pin connected to HC-SR501 OUT
+PIR_PIN = 4  # GPIO pin connected to HC-SR501 OUT
 
 # --- GPIO Setup ---
 GPIO.setmode(GPIO.BCM)
