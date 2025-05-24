@@ -28,6 +28,7 @@ try:
                 GPIO.output(LED_PIN, GPIO.LOW)
                 time.sleep(0.3)
         else:
+            print("No motion ~ LED Switched OFF")
             GPIO.output(LED_PIN, GPIO.LOW)  # Ensure LED is off when no motion
             time.sleep(0.5)
 
